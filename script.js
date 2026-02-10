@@ -2,6 +2,8 @@ function getFlames() {
 
     let firstName = document.getElementById("Fname").value.toLowerCase();
     let secondName = document.getElementById("Sname").value.toLowerCase();
+    firstName = firstName.replace(/\s+/g, '').toLowerCase();
+    secondName = secondName.replace(/\s+/g, '').toLowerCase();
 
     // Convert to arrays
     let arr1 = firstName.split("");
